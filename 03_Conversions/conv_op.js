@@ -19,3 +19,4 @@ console.log(numTostr);
 //Converting num to boolean
 let numTobool = Boolean(num)
 console.log(numTobool);
+
