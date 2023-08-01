@@ -5,7 +5,7 @@ let job="Software Engineer"
 console.log(`My name is ${name0},I studied in ${school} and i want to become a ${job}`);
 
 //Another way of declearing a String
-const gameName = 'LUDO'
+const gameName = new String('LUDO')
 console.log(typeof gameName);
 console.log(gameName.__proto__); //This will return multiple methods that a String can perform
 
