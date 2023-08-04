@@ -48,4 +48,17 @@ console.log('Orginal array: ',ar);
 console.log('Sliced array: ',ar.splice(0,5));
 console.log('Orginal array: ',ar);
 
+//concatinating two arrays in a Single array
+const new_Arr = [1,2,3,4,5];
+const new_Arr1 = [1,2,3,4,5];
+const res_arr = new_Arr.concat(new_Arr1);
+console.log(res_arr);
 
+//Extracting multiple arrays which are inside an array into single array
+const nested_Arr = [1,2,3,4,5,[6,7,8,9,[0,9,8,7]]];
+const single_arr = nested_Arr.flat(2) //We can also pass Infinithy as parameter
+console.log(single_arr);
+
+//We can ask that is it an array?
+console.log(Array.isArray("Vishal"));
+console.log(Array.from("Sahil"));
