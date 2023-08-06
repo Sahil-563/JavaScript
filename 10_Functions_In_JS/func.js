@@ -28,13 +28,13 @@ console.log(res1);//Now the problem of undefined will not be there
 // So we can use if block to check that the argument is undefined ot not
 
 function isloggedin(username){
-    if(username===undefined){
+    if(username===undefined){ //=== Used for strict check
         console.log('Please enter name');
         return
     }
     return `${username} just logged in`
 }
-console.log(isloggedin());
+console.log(isloggedin("Sahil"));
 
 
 

@@ -56,7 +56,7 @@ console.log(res_arr);
 
 //Extracting multiple arrays which are inside an array into single array
 const nested_Arr = [1,2,3,4,5,[6,7,8,9,[0,9,8,7]]];
-const single_arr = nested_Arr.flat(2) //We can also pass Infinithy as parameter
+const single_arr = nested_Arr.flat(2) //We can also pass Infinity as parameter
 console.log(single_arr);
 
 //We can ask that is it an array?
