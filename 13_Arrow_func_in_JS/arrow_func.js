@@ -35,3 +35,9 @@ console.log(addOne(2));
 //Means we have to use {} curly braces after paranthesis
 const printUsername=()=>({username:"Sahil"})
 console.log(printUsername());
+
+//Declearing a arrow function without any variable
+(num)=>{
+    return num
+}
+console.log((1));
