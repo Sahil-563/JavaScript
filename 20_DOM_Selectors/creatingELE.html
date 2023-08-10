@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Elements through DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body >
+    
+</body>
+<Script>
+    //Creating an Element in HTML page through DOM
+    const div = document.createElement('div');
+    console.log(div);
+    //Appending div to the body of HTML page
+    document.body.appendChild(div);
+    //Writing anything in div scope
+    div.innerText="Hello, world!";
+    //setting classname of div
+    div.className="main";
+    //setting id name of div
+    div.id="first-div";
+    
+</Script>
+</html>

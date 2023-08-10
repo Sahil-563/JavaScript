@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+    </div> 
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent  );
+    // console.log(parent.children);
+    // console.log(parent.children[1]);
+    // console.log(parent.children[1].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        parent.children[i].style.backgroundColor="blue"
+        
+    }
+    //To have the FirstChild of a Parent
+    // console.log(parent.firstElementChild);
+    // //To have the LastChild of a Parent
+    // console.log(parent.lastElementChild);
+
+    //To select a parent from a child
+    const dayOne = document.querySelector(".days")
+    console.log(dayOne);
+    //To select the parent of a child
+    console.log(dayOne.parentElement);
+    //To select next sibbling of a child
+    console.log(dayOne.nextElementSibling);
+
+    //To see whats behind the scenes
+    console.log(parent.childNodes);
+</script>
+</html>
