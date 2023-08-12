@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-align{
+
+    text-align: center;
+}
+.boxes{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    height: 200px;
+    width:200px;
+    border: 1px solid black; 
+}
+#grey{
+    background-color: gray;
+}
+#white{
+    background-color: white;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
