@@ -7,7 +7,11 @@ https://github.com/Sahil-563/JavaScript/assets/93484552/44e2ca4a-9683-4a1c-ac8a-
 >> ## Project2:-- BMI-Calculator
 >> 
 
-https://github.com/Sahil-563/JavaScript/assets/93484552/5cbe5ac6-590c-443d-8767-42e101e7093b
+https://github.com/Sahil-563/JavaScript/assets/93484552/66c7bef1-adfe-4aae-bf57-0e8ed290791e
+
+
+
+
 
 
 
