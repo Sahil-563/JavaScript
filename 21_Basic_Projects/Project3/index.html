@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        .center{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #clock{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 60%;
+            background-color: rgb(94, 217, 223);
+            border-radius: 50%;
+            font-size: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div id="banner"><span>Your Local Time is</span></div>
+        <div id="clock"></div>
+    </div>
+
+
+
+    <script src="clock.js"></script>
+</body>
+</html>
