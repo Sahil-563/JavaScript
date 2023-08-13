@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    height: 500px;
+    width: 400px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    margin-top: 20px;
+}
+.weight-guide{
+    margin-top: 20px;
+}
