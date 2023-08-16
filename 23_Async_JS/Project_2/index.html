@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+<body>
+    <h1>My Name is Vishal</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    //setInterval
+    //It do work again and again after a particular interval
+    // const printVishal=setInterval(function() {
+    //     console.log("Vishal");
+    // },4000)
+
+    //We can also give reference of a function to setInterval as:--
+    const sayHi=function() {
+        console.log("Hi")
+    }
+    const changeHi=setInterval(sayHi,2000);
+
+    //We can also stop the setInterval by clearInterval
+    clearInterval(changeHi);
+
+    //Using our html elements to start and stop log
+    let printVishal
+    document.getElementById('start').addEventListener('click', function(){
+        printVishal=setInterval(function() {
+        console.log("Vishal");
+        },1000)
+    });
+    document.getElementById('stop').addEventListener('click', function(){
+        clearInterval(printVishal)
+    });
+   
+
+</script>
+</html>

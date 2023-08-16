@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async JS</title>
+</head>
+<body>
+    <h1>My Name is Sahil</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    //setTimeout:-
+    //It do work only one time 
+    setTimeout(function() {
+        console.log("Sahil");
+    },5000)
+
+
+    const sayMyName=function(){
+        console.log("Hello,My name is Sahil");
+    }
+
+    //Suppose we want to change the h1 after some time
+    const changeH1=function(){
+        document.querySelector("h1").innerHTML = "You are doing great";
+
+    }
+    //We can give reference of the function to the setTimeout
+    const changeMe=setTimeout(changeH1,2000) //Here sayMyName is reference
+
+    //Now You want to stop the timeOut 
+    //for that we have clearTimeout
+    document.querySelector("#stop").addEventListener("click", function(e){
+        clearTimeout(changeMe);
+        console.log("Stopped");
+    },false)
+
+</script>
+</html>

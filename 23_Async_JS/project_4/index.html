@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keys</title>
+</head>
+
+<body>
+    <div class="insert"></div>
+    <script>
+        const insert = document.querySelector('.insert');
+        window.addEventListener('keydown', (e) => {
+            insert.innerHTML = `
+            <div class='color'>
+            <table>
+            <tr>
+                <th>KeyCode</th>
+                <th>Key</th>
+                <th>code</th>
+             </tr>
+             <tr>
+                <td>${e.keyCode}</td>
+                <td>${e.key}</td>
+                <td>${e.code}</td>
+            </tr>
+            
+            </table>
+            </div>`
+        })
+    </script>
+</body>
+
+</html>
