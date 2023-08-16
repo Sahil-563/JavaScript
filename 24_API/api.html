@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API requesting</title>
+</head>
+<body style="background-color: black;">
+    
+</body>
+<script>
+    //Getting the data of API with XML http request
+    const requestURL ='https://api.github.com/users/hiteshchoudhary' //Having the api in a variable
+
+    //Creating a object out of XML http request() class
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestURL);
+    //To continously moniter the readystate of xhr
+    xhr.onreadystatechange=function() {
+        console.log(xhr.readyState); //Printing the readyState
+        //Our data from the api will be fetched only if we are readystate 4
+        //so:--
+        if(xhr.readyState===4){
+            const data=JSON.parse(this.responseText); //this is used for current context
+            //Data always comes in string format
+            //So we have to convert that data in JSON format by JSON.parse method
+            console.log(typeof data);
+            console.log(data.followers); //
+
+        }
+    }
+    
+    xhr.send(); //Sending the XML request
+
+
+</script>
+</html>

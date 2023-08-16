@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card-data</title>
+    <style>
+        .card{
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card"></div>
+    <button id="button">Click</button>
+
+    <script>
+        const requestURL ='https://api.github.com/users/hiteshchoudhary'
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestURL);
+        const button = document.querySelector("#button");
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState===4){
+                var data=JSON.parse(this.responseText);
+                // console.log(data.followers);
+            }
+            
+            // console.log(button);
+            button.addEventListener("click",function(e) {
+                console.log(data.followers);
+            })
+        
+        }
+        
+        xhr.send();
+        
+    </script>
+</body>
+</html>
