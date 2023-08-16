@@ -15,4 +15,3 @@ const programming = ["cpp","java","python"]
 for (const key in programming) { //In array forin loop returns a key but in forof looop the value of that arrays is returned
     console.log(key);
 }
-//forin loop cannot be used with objects

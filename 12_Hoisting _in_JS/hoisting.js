@@ -31,7 +31,7 @@ function addone(num){
 }
 
 console.log(val(3));
-function addTwo(num){ //This function is not hoisted
+const val=function addTwo(num){ //This function is not hoisted
     return num+2
 }
 

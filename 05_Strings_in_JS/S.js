@@ -19,6 +19,7 @@ console.log(gameName.indexOf('L'));
 console.log(gameName.substring(0,2));
 //NOTE:-- Substring cannot start from negative index
 console.log(gameName.slice(-5,-1));
+console.log(gameName.substr(0,2)); //2nd parameter is number of characters
 
 /******************Trim ****************/
 let name ="    Sahil"

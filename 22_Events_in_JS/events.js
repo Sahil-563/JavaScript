@@ -24,7 +24,7 @@ document.getElementById('images').addEventListener('click',function(e){
 },false)
 document.getElementById('owl').addEventListener('click',function(e){
     console.log("You clicked on owl");
-    e.stopPropagation() // We can also stop event propagation or in this case event bubbling
+    // e.stopPropagation() // We can also stop event propagation or in this case event bubbling
     //by calling a method on a particular event which is stopPropagation()
 },false)
 
@@ -37,17 +37,18 @@ document.getElementById('owl').addEventListener('click',function(e){
 //Event Capturing means:--Firstly outer event will take place evenn if you clicked on the event which is inside that a particular event then inner event will be triggered
 
 //Suppose if we want to prevent a particular event
-documnet.getElementById('google').addEventListener('click', function(e){
+document.getElementById('google').addEventListener('click', function(e){
     e.preventDefault();
 },false);
 
-// document.querySelector('#images').addEventListener('click', function(e){
-//         console.log(e.target.tagName);
-//         if (e.target.tagName === 'IMG') {
-//             console.log(e.target.id);
-//             let removeIt = e.target.parentNode
-//             removeIt.remove()
-//         }
+document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        
     
         
-//     })
+    })
